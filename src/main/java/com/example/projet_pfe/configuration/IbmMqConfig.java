@@ -17,7 +17,8 @@ public class IbmMqConfig {
     public ConnectionFactory connectionFactory() {
         MQQueueConnectionFactory factory = new MQQueueConnectionFactory();
         try {
-            factory.setHostName("192.168.37.129"); // Adresse IP du serveur IBM MQ
+            //factory.setHostName("192.168.37.129"); // Adresse IP du serveur IBM MQ
+            factory.setHostName("ibmmq-service"); // Use Kubernetes service name
             factory.setPort(1414); // Port par défaut d'IBM MQ
             factory.setQueueManager("QM1"); // Nom du gestionnaire de files d'attente
             factory.setChannel("DEV.APP.SVRCONN"); // Canal de connexion
