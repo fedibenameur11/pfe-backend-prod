@@ -12,7 +12,7 @@ import org.springframework.jms.core.JmsTemplate;
 @Configuration
 @EnableJms
 public class IbmMqConfig {
-
+/*
     @Bean
     public ConnectionFactory connectionFactory() {
         MQQueueConnectionFactory factory = new MQQueueConnectionFactory();
@@ -43,4 +43,6 @@ public class IbmMqConfig {
         factory.setConcurrency("1-1"); // Nombre de consommateurs concurrents
         return factory;
     }
+
+ */
 }

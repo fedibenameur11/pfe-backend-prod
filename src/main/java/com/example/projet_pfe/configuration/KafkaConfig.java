@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Configuration
 public class KafkaConfig {
-
+/*
     @Bean
     public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
@@ -50,4 +50,6 @@ public class KafkaConfig {
         factory.setConsumerFactory(consumerFactory());
         return factory;
     }
+
+ */
 }
